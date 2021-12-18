@@ -2153,8 +2153,8 @@ static int kc_decode(SDL_Keysym const & ks, bool key_down)
 
 	case SDLK_F1: if (is_hotkey_down(ks)) {if (!key_down) SysMountFirstFloppy(); return CODE_HOTKEY;} else return 0x7a;
 	case SDLK_F2: return 0x78;
-	case SDLK_F3: return 0x63;
-	case SDLK_F4: return 0x76;
+	case SDLK_F3: return 0x7F; // Power Key instead of F3 0x63;
+	case SDLK_F4: return 0x51; // Keypad Equals instead of F4 0x76;
 	case SDLK_F5: return 0x60;
 	case SDLK_F6: return 0x61;
 	case SDLK_F7: return 0x62;
